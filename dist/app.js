@@ -1,105 +1,105 @@
 const drinkMenu = [
   {
     id: "shooters",
-    name: "Chupitos",
-    note: "Las degustaciones incluyen 5 chupitos.",
+    name: "Shots",
+    note: "Flights include 5 shots.",
     items: [
-      { name: "Chupito individual", price: 7 },
-      { name: "Pepinazo", price: 30, description: "Degustación de cinco chupitos." },
-      { name: "Lemon Drop", price: 30, description: "Degustación de cinco chupitos." },
-      { name: "Manguito", price: 30, description: "Degustación de cinco chupitos." },
-      { name: "Candy Shot", price: 30, description: "Degustación de cinco chupitos." },
-      { name: "Kamikaze", price: 30, description: "Degustación de cinco chupitos." }
+      { name: "Single Shot", price: 7 },
+      { name: "Pepinazo", price: 30, description: "Flight of five shots." },
+      { name: "Lemon Drop", price: 30, description: "Flight of five shots." },
+      { name: "Manguito", price: 30, description: "Flight of five shots." },
+      { name: "Candy Shot", price: 30, description: "Flight of five shots." },
+      { name: "Kamikaze", price: 30, description: "Flight of five shots." }
     ]
   },
   {
     id: "mojitos",
     name: "Mojitos",
     items: [
-      { name: "Mojito clásico", price: 10 },
-      { name: "Mojito de fresa", price: 12 },
-      { name: "Mojito de coco", price: 12 },
-      { name: "Degustación de mojitos", price: 30, description: "Tres sabores." }
+      { name: "Classic Mojito", price: 10 },
+      { name: "Strawberry Mojito", price: 12 },
+      { name: "Coconut Mojito", price: 12 },
+      { name: "Mojito Flight", price: 30, description: "Three flavors." }
     ]
   },
   {
     id: "margaritas",
     name: "Margaritas",
     items: [
-      { name: "Limón", price: 12 },
-      { name: "Sandía", price: 14 },
-      { name: "Fresa", price: 14 },
+      { name: "Lime", price: 12 },
+      { name: "Watermelon", price: 14 },
+      { name: "Strawberry", price: 14 },
       { name: "Mango", price: 14 },
-      { name: "Pepino", price: 14 },
-      { name: "Guayaba", price: 14 },
-      { name: "Tamarindo", price: 14 },
+      { name: "Cucumber", price: 14 },
+      { name: "Guava", price: 14 },
+      { name: "Tamarind", price: 14 },
       { name: "Cadillac", price: 18 },
-      { name: "Degustación de margaritas", price: 40, description: "Seis sabores." }
+      { name: "Margarita Flight", price: 40, description: "Six flavors." }
     ]
   },
   {
     id: "vodkaritas",
     name: "Vodkaritas",
     items: [
-      { name: "Pepino", price: 12, description: "Vodka de la casa, Midori, puré de pepino, jugo de limón, Tajín y escarchado de azúcar." },
-      { name: "Mango", price: 12, description: "Vodka de la casa, jugo de limón, jarabe de agave, puré de mango y escarchado de Tajín." },
-      { name: "Açaí", price: 12, description: "Vodka de la casa, puré de açaí, jugo de limón, jarabe de agave y escarchado de azúcar." }
+      { name: "Cucumber", price: 12, description: "House vodka, Midori, cucumber purée, lime juice, Tajín and a sugar rim." },
+      { name: "Mango", price: 12, description: "House vodka, lime juice, agave syrup, mango purée and a Tajín rim." },
+      { name: "Açaí", price: 12, description: "House vodka, açaí purée, lime juice, agave syrup and a sugar rim." }
     ]
   },
   {
     id: "mezcalitas",
     name: "Mezcalitas",
     items: [
-      { name: "Mezcalita de maracuyá", price: 16, description: "Mezcal de la casa, jugo de limón, jarabe de agave, puré de maracuyá y escarchado de Tajín." },
-      { name: "Mezcalita de tamarindo", price: 16, description: "Mezcal de la casa, jugo de limón, jarabe de agave, puré de tamarindo y escarchado de Tajín." },
-      { name: "Mezcal de frutos rojos", price: 16, description: "Mezcal de la casa, jugo de limón, jarabe de agave, puré de açaí y hojas de menta." }
+      { name: "Passion Fruit Mezcalita", price: 16, description: "House mezcal, lime juice, agave syrup, passion fruit purée and a Tajín rim." },
+      { name: "Tamarind Mezcalita", price: 16, description: "House mezcal, lime juice, agave syrup, tamarind purée and a Tajín rim." },
+      { name: "Berry Mezcal", price: 16, description: "House mezcal, lime juice, agave syrup, açaí purée and mint leaves." }
     ]
   },
   {
     id: "micheladas",
     name: "Micheladas",
     items: [
-      { name: "Clásica de la casa", price: 13 },
+      { name: "House Classic", price: 13 },
       { name: "Mango", price: 14 },
-      { name: "Tamarindo", price: 14 },
-      { name: "La Mentirosa", price: 9, description: "Mezcla para michelada y agua mineral." },
-      { name: "Degustación de micheladas", price: 35 }
+      { name: "Tamarind", price: 14 },
+      { name: "La Mentirosa", price: 9, description: "Michelada mix and sparkling water." },
+      { name: "Michelada Flight", price: 35 }
     ]
   },
   {
     id: "cocktails",
-    name: "Cócteles",
+    name: "Cocktails",
     items: [
-      { name: "The Fire Smoky", price: 18, description: "Mezcal El Silencio, jarabe de sandía y bitters de ruibarbo." },
-      { name: "Old Fashioned de la casa", price: 20, description: "Bourbon, licor Luxardo, bitters aromáticos, cáscara de naranja y cereza negra." },
-      { name: "Oaxaca Old Fashioned", price: 18, description: "Mezcal El Silencio y bitters aromáticos." },
-      { name: "Whiskey Smash", price: 16, description: "Maker's Mark, jarabe simple, jugo de limón y menta macerada." },
-      { name: "El Guayabito", price: 16, description: "Herradura Reposado, jarabe de agave, jugo de limón y puré de guayaba." },
-      { name: "Sangría de la casa", price: 12, description: "Vino tinto, agua mineral, jugo de limón y jugo de naranja." },
-      { name: "The Poolside", price: 14, description: "Ron Malibu, licor de durazno, licor de melón y crema de coco." },
-      { name: "Piña Colada", price: 14, description: "Ron Malibu, jugo de piña, jarabe de coco, crema batida y cereza." },
-      { name: "Pink Panther", price: 18, description: "Tequila, mezcal, sandía y bitters aromáticos." },
-      { name: "Paloma", price: 14, description: "Tequila de la casa, jugo de limón, jugo de toronja y jarabe de agave." },
-      { name: "Cantarito picante con tequila", price: 16, description: "Tequila Herradura, jugo de naranja, jugo de toronja, Squirt y rodajas de chile serrano." },
-      { name: "Tropicoqueta", price: 16, description: "Malibu, arándano rojo, piña, licor de durazno y mezcla de leche y crema." },
-      { name: "Old Fashioned preparado en la mesa", price: 24 }
+      { name: "The Fire Smoky", price: 18, description: "El Silencio mezcal, watermelon syrup and rhubarb bitters." },
+      { name: "House Old Fashioned", price: 20, description: "Bourbon, Luxardo liqueur, aromatic bitters, orange peel and black cherry." },
+      { name: "Oaxaca Old Fashioned", price: 18, description: "El Silencio mezcal and aromatic bitters." },
+      { name: "Whiskey Smash", price: 16, description: "Maker's Mark, simple syrup, lime juice and muddled mint." },
+      { name: "El Guayabito", price: 16, description: "Herradura Reposado, agave syrup, lime juice and guava purée." },
+      { name: "House Sangria", price: 12, description: "Red wine, sparkling water, lime juice and orange juice." },
+      { name: "The Poolside", price: 14, description: "Malibu rum, peach schnapps, melon liqueur and coconut cream." },
+      { name: "Piña Colada", price: 14, description: "Malibu rum, pineapple juice, coconut syrup, whipped cream and a cherry." },
+      { name: "Pink Panther", price: 18, description: "Tequila, mezcal, watermelon and aromatic bitters." },
+      { name: "Paloma", price: 14, description: "House tequila, lime juice, grapefruit juice and agave syrup." },
+      { name: "Spicy Tequila Cantarito", price: 16, description: "Herradura tequila, orange juice, grapefruit juice, Squirt and sliced serrano pepper." },
+      { name: "Tropicoqueta", price: 16, description: "Malibu, cranberry, pineapple, peach schnapps and half-and-half." },
+      { name: "Tableside Old Fashioned", price: 24 }
     ]
   },
   {
     id: "tequila",
     name: "Tequila",
     items: [
-      { name: "Tequila de la casa", price: 8, subgroup: "Blanco" },
-      { name: "Herradura Silver", price: 14, subgroup: "Blanco" },
-      { name: "Don Julio", price: 16, subgroup: "Blanco" },
-      { name: "Patrón", price: 14, subgroup: "Blanco" },
-      { name: "1800", price: 20, subgroup: "Blanco" },
-      { name: "Casamigos", price: 15, subgroup: "Blanco" },
-      { name: "José Cuervo", price: 12, subgroup: "Blanco" },
-      { name: "Cazadores", price: 12, subgroup: "Blanco" },
-      { name: "Clase Azul", price: 25, subgroup: "Blanco" },
-      { name: "Maestro Dobel", price: 16, subgroup: "Blanco" },
-      { name: "Mandala", price: 18, subgroup: "Blanco" },
+      { name: "House tequila", price: 8, subgroup: "Silver" },
+      { name: "Herradura Silver", price: 14, subgroup: "Silver" },
+      { name: "Don Julio", price: 16, subgroup: "Silver" },
+      { name: "Patrón", price: 14, subgroup: "Silver" },
+      { name: "1800", price: 20, subgroup: "Silver" },
+      { name: "Casamigos", price: 15, subgroup: "Silver" },
+      { name: "José Cuervo", price: 12, subgroup: "Silver" },
+      { name: "Cazadores", price: 12, subgroup: "Silver" },
+      { name: "Clase Azul", price: 25, subgroup: "Silver" },
+      { name: "Maestro Dobel", price: 16, subgroup: "Silver" },
+      { name: "Mandala", price: 18, subgroup: "Silver" },
       { name: "Don Julio", price: 20, subgroup: "Añejo" },
       { name: "Don Julio 70 Cristalino", price: 26, subgroup: "Añejo" },
       { name: "Don Julio 1942", price: 40, subgroup: "Añejo" },
@@ -130,16 +130,16 @@ const drinkMenu = [
       { name: "Old Forester", price: 12, subgroup: "Bourbon" },
       { name: "Jack Daniel's", price: 12, subgroup: "Bourbon" },
       { name: "Woodford Reserve", price: 16, subgroup: "Bourbon" },
-      { name: "Crown Royal", price: 13, subgroup: "Canadiense e irlandés" },
-      { name: "Jameson", price: 12, subgroup: "Canadiense e irlandés" },
-      { name: "Jameson Black Barrel", price: 14, subgroup: "Canadiense e irlandés" },
-      { name: "Bulleit Rye", price: 12, subgroup: "Estadounidense" },
-      { name: "Fireball", price: 12, subgroup: "Estadounidense" },
-      { name: "Buchanan's 12", price: 16, subgroup: "Escocés" },
-      { name: "Buchanan's 18", price: 25, subgroup: "Escocés" },
-      { name: "Johnnie Walker Black Label", price: 16, subgroup: "Escocés" },
-      { name: "Johnnie Walker Blue Label", price: 45, subgroup: "Escocés" },
-      { name: "The Macallan", price: 22, subgroup: "Escocés" }
+      { name: "Crown Royal", price: 13, subgroup: "Canadian & Irish" },
+      { name: "Jameson", price: 12, subgroup: "Canadian & Irish" },
+      { name: "Jameson Black Barrel", price: 14, subgroup: "Canadian & Irish" },
+      { name: "Bulleit Rye", price: 12, subgroup: "American" },
+      { name: "Fireball", price: 12, subgroup: "American" },
+      { name: "Buchanan's 12", price: 16, subgroup: "Scotch" },
+      { name: "Buchanan's 18", price: 25, subgroup: "Scotch" },
+      { name: "Johnnie Walker Black Label", price: 16, subgroup: "Scotch" },
+      { name: "Johnnie Walker Blue Label", price: 45, subgroup: "Scotch" },
+      { name: "The Macallan", price: 22, subgroup: "Scotch" }
     ]
   },
   {
@@ -155,7 +155,7 @@ const drinkMenu = [
   },
   {
     id: "gin",
-    name: "Ginebra",
+    name: "Gin",
     items: [
       { name: "Bombay Dry", price: 10 },
       { name: "Bombay Sapphire", price: 13 },
@@ -164,26 +164,26 @@ const drinkMenu = [
   },
   {
     id: "beer",
-    name: "Cerveza",
+    name: "Beer",
     items: [
-      { name: "Cerveza de barril rotativa", price: 8, subgroup: "De barril" },
-      { name: "Cerveza de barril grande", price: 14, subgroup: "De barril" },
-      { name: "Modelo Especial", price: 7, subgroup: "En botella" },
-      { name: "Negra Modelo", price: 7, subgroup: "En botella" },
-      { name: "Corona", price: 7, subgroup: "En botella" },
-      { name: "Pacífico", price: 7, subgroup: "En botella" },
-      { name: "Bud Light", price: 7, subgroup: "En botella" },
-      { name: "Michelob Ultra", price: 5, subgroup: "En botella" },
-      { name: "805", price: 7, subgroup: "En botella" },
-      { name: "Lagunitas IPA", price: 7, subgroup: "En botella" },
-      { name: "Ballast Point Sculpin IPA", price: 7, subgroup: "En botella" },
-      { name: "Mango White Claw", price: 7, subgroup: "En botella" },
-      { name: "Estrella Jalisco", price: 7, subgroup: "En botella" },
-      { name: "Stella Artois", price: 7, subgroup: "En botella" },
-      { name: "Corona Zero", price: 7, subgroup: "En botella" },
-      { name: "Heineken", price: 7, subgroup: "En botella" },
-      { name: "Heineken Zero", price: 7, subgroup: "En botella" },
-      { name: "Cubeta de cerveza", price: 36 }
+      { name: "Rotating Draft Beer", price: 8, subgroup: "Draft" },
+      { name: "Large Draft Beer", price: 14, subgroup: "Draft" },
+      { name: "Modelo Especial", price: 7, subgroup: "Bottled" },
+      { name: "Negra Modelo", price: 7, subgroup: "Bottled" },
+      { name: "Corona", price: 7, subgroup: "Bottled" },
+      { name: "Pacífico", price: 7, subgroup: "Bottled" },
+      { name: "Bud Light", price: 7, subgroup: "Bottled" },
+      { name: "Michelob Ultra", price: 5, subgroup: "Bottled" },
+      { name: "805", price: 7, subgroup: "Bottled" },
+      { name: "Lagunitas IPA", price: 7, subgroup: "Bottled" },
+      { name: "Ballast Point Sculpin IPA", price: 7, subgroup: "Bottled" },
+      { name: "Mango White Claw", price: 7, subgroup: "Bottled" },
+      { name: "Estrella Jalisco", price: 7, subgroup: "Bottled" },
+      { name: "Stella Artois", price: 7, subgroup: "Bottled" },
+      { name: "Corona Zero", price: 7, subgroup: "Bottled" },
+      { name: "Heineken", price: 7, subgroup: "Bottled" },
+      { name: "Heineken Zero", price: 7, subgroup: "Bottled" },
+      { name: "Beer Bucket", price: 36 }
     ]
   },
   {
@@ -200,7 +200,7 @@ const drinkMenu = [
   },
   {
     id: "rum",
-    name: "Ron",
+    name: "Rum",
     items: [
       { name: "Malibu", price: 12 },
       { name: "Bacardi Superior", price: 10 },
@@ -209,12 +209,12 @@ const drinkMenu = [
   },
   {
     id: "wine-cognac",
-    name: "Vino y coñac",
+    name: "Wine & Cognac",
     items: [
-      { name: "Vino tinto Cabernet", price: 10, subgroup: "Vino por copa" },
-      { name: "Chardonnay", price: 8, subgroup: "Vino por copa" },
-      { name: "Rémy Martin", price: 12, subgroup: "Brandy y coñac" },
-      { name: "Hennessy", price: 16, subgroup: "Brandy y coñac" }
+      { name: "Red wine Cabernet", price: 10, subgroup: "Wine by the Glass" },
+      { name: "Chardonnay", price: 8, subgroup: "Wine by the Glass" },
+      { name: "Rémy Martin", price: 12, subgroup: "Brandy & Cognac" },
+      { name: "Hennessy", price: 16, subgroup: "Brandy & Cognac" }
     ]
   }
 ];
@@ -222,68 +222,68 @@ const drinkMenu = [
 const foodMenu = [
   {
     id: "cantina-bites",
-    name: "Para compartir",
+    name: "To Share",
     eyebrow: "Cantina Bites",
     items: [
       {
-        name: "Guacamole con totopos",
+        name: "Guacamole & Chips",
         price: 13,
-        description: "Guacamole fresco con pico de gallo y queso por encima, acompañado de salsa roja y totopos."
+        description: "Fresh guacamole topped with pico de gallo and cheese, served with red salsa and tortilla chips."
       },
       {
-        name: "Guacamole con chicharrón",
+        name: "Guacamole & Chicharrón",
         price: 20,
-        description: "Guacamole fresco con pico de gallo y queso por encima, acompañado de salsa verde, carne crujiente y chicharrón."
+        description: "Fresh guacamole topped with pico de gallo and cheese, served with green salsa, crispy meat and chicharrón."
       },
       {
-        name: "Tacos de tuétano",
+        name: "Bone Marrow Tacos",
         price: 24,
-        description: "Hueso con tuétano rostizado, carne asada, queso derretido, mayonesa picante, alioli de cilantro, chimichurri y cebolla encurtida; servido con tortillas de harina."
+        description: "Roasted bone marrow, carne asada, melted cheese, spicy mayo, cilantro aioli, chimichurri and pickled onion; served with flour tortillas."
       },
       {
-        name: "Papas Compadres",
+        name: "Compadres Fries",
         price: 18,
-        description: "Papas fritas con queso derretido, mayonesa picante, alioli de cilantro, cebolla encurtida y huevo frito. A elegir: asada, birria o pollo."
+        description: "French fries with melted cheese, spicy mayo, cilantro aioli, pickled onion and a fried egg. Choice of carne asada, birria or chicken."
       },
       {
         name: "Nacho Libre",
         price: 17,
-        description: "Queso para nachos, salsa cremosa de tomatillo, frijoles refritos, crema agria, pico de gallo, jalapeño y totopos. A elegir: asada, pork belly, pollo o vegetales rostizados."
+        description: "Nacho cheese, creamy tomatillo salsa, refried beans, sour cream, pico de gallo, jalapeño and tortilla chips. Choice of carne asada, pork belly, chicken or roasted vegetables."
       },
       {
-        name: "Alitas de pollo",
+        name: "Chicken Wings",
         price: 18,
-        description: "A elegir: Buffalo, mango habanero o BBQ. Acompañadas de papas fritas."
+        description: "Choice of Buffalo, mango habanero or BBQ. Served with French fries."
       },
       {
-        name: "Taquitos de pollo",
+        name: "Chicken Taquitos",
         price: 17,
-        description: "Taquitos fritos de pollo en tortilla de maíz con mayonesa picante, crema agria, alioli de cilantro y queso."
+        description: "Fried chicken taquitos in corn tortillas with spicy mayo, sour cream, cilantro aioli and cheese."
       },
       {
         name: "Edamame",
         price: 15,
-        description: "Preparado con ajo, limón, salsa de soya y chile triturado."
+        description: "Prepared with garlic, lime, soy sauce and crushed chile."
       },
       {
-        name: "Bocados de pork belly",
+        name: "Pork Belly Bites",
         price: 20,
-        description: "Pork belly crujiente, miel con sriracha, mayonesa picante y tortilla de maíz."
+        description: "Crispy pork belly, sriracha honey, spicy mayo and corn tortillas."
       },
       {
-        name: "Nachos de atún poke",
+        name: "Ahi Poke Nachos",
         price: 20,
-        description: "Atún ahi marinado, wonton crujiente, col encurtida, aguacate, salsa de anguila, salsa de soya, alioli de cilantro y semillas de sésamo."
+        description: "Marinated ahi tuna, crispy wontons, pickled cabbage, avocado, eel sauce, soy sauce, cilantro aioli and sesame seeds."
       },
       {
         name: "Compa Bites",
         price: 25,
-        description: "Taquitos de pollo, Papas Compadres y alitas Buffalo."
+        description: "Chicken taquitos, Compadres Fries and Buffalo wings."
       },
       {
-        name: "Degustación de tacos",
+        name: "Taco Sampler",
         price: 24,
-        description: "Taco surf & turf, taco de pork belly, taco de camarón crujiente y taco de pescado rebozado."
+        description: "Surf & turf taco, pork belly taco, crispy shrimp taco and battered fish taco."
       }
     ]
   },
@@ -292,302 +292,302 @@ const foodMenu = [
     name: "Tacos",
     items: [
       {
-        name: "Taco de carne asada",
+        name: "Carne Asada Taco",
         price: 6.5,
-        description: "Tortilla de harina, queso derretido, col, pico de gallo, alioli de cilantro y mayonesa picante."
+        description: "Flour tortilla, melted cheese, cabbage, pico de gallo, cilantro aioli and spicy mayo."
       },
       {
-        name: "Taco de birria",
+        name: "Birria Taco",
         price: 7,
-        description: "Un taco servido con cebolla y cilantro."
+        description: "One taco served with onion and cilantro."
       },
       {
-        name: "Taco de pork belly",
+        name: "Pork Belly Taco",
         price: 7,
-        description: "Pork belly cocinado lentamente, tortilla de maíz, queso, guacamole y cebolla encurtida."
+        description: "Slow-cooked pork belly, corn tortilla, cheese, guacamole and pickled onion."
       },
       {
-        name: "Taco de camarón crujiente",
+        name: "Crispy Shrimp Taco",
         price: 6.5,
-        description: "Tortilla de harina, camarón de roca rebozado agridulce y picante, col, mayonesa picante, miel con sriracha, semillas de sésamo y cebollín."
+        description: "Flour tortilla, sweet-and-spicy battered rock shrimp, cabbage, spicy mayo, sriracha honey, sesame seeds and green onion."
       },
       {
-        name: "Taco de pescado",
+        name: "Fish Taco",
         price: 6,
-        description: "Tortilla de maíz, pescado rebozado con cerveza, col, pico de gallo y alioli de cilantro."
+        description: "Corn tortilla, beer-battered fish, cabbage, pico de gallo and cilantro aioli."
       },
       {
-        name: "Tacos de quesabirria",
+        name: "Quesabirria Tacos",
         price: 20,
-        description: "Tres tacos con queso derretido, consomé, cebolla y cilantro."
+        description: "Three tacos with melted cheese, consommé, onion and cilantro."
       },
       {
-        name: "Tacos gobernador",
+        name: "Gobernador Tacos",
         price: 25,
-        description: "Tres tacos de camarón a la parrilla con col, pico de gallo, crema agria y queso derretido."
+        description: "Three grilled shrimp tacos with cabbage, pico de gallo, sour cream and melted cheese."
       }
     ]
   },
   {
     id: "special-tacos",
-    name: "Tacos especiales",
+    name: "Specialty Tacos",
     items: [
       {
         name: "Arrachera Surf & Turf",
         price: 9,
-        description: "Carne estilo arrachera, camarón picante a la parrilla, col, pico de gallo y alioli de cilantro."
+        description: "Arrachera-style steak, spicy grilled shrimp, cabbage, pico de gallo and cilantro aioli."
       },
       {
-        name: "Taco especial de arrachera",
+        name: "Arrachera Specialty Taco",
         price: 16,
-        description: "Tortilla de maíz de 7 pulgadas, nopales, cebolla encurtida, queso derretido y alioli de cilantro."
+        description: "Seven-inch corn tortilla, nopales, pickled onion, melted cheese and cilantro aioli."
       },
       {
-        name: "Taco de ribeye",
+        name: "Ribeye Taco",
         price: 12,
-        description: "Tortilla de harina de 8 pulgadas, ribeye, queso derretido, cebolla asada, cilantro y cebolla encurtida."
+        description: "Eight-inch flour tortilla, ribeye, melted cheese, grilled onion, cilantro and pickled onion."
       }
     ]
   },
   {
     id: "burritos-bowls",
-    name: "Burritos, bowls y quesadillas",
+    name: "Burritos, Bowls & Quesadillas",
     items: [
       {
         name: "Burrito Surf & Turf",
         price: 21,
-        description: "Arrachera, camarón picante a la parrilla, tocino, queso derretido, pico de gallo, col, mayonesa picante y alioli de cilantro. Acompañado de papas fritas."
+        description: "Arrachera, spicy grilled shrimp, bacon, melted cheese, pico de gallo, cabbage, spicy mayo and cilantro aioli. Served with French fries."
       },
       {
         name: "Burrito California",
         price: 17,
-        description: "Carne asada, papas fritas por dentro, pico de gallo y queso."
+        description: "Carne asada, French fries inside, pico de gallo and cheese."
       },
       {
-        name: "Burrito de la casa",
+        name: "House Burrito",
         price: 17,
-        description: "Arroz, frijoles refritos, col, pico de gallo y crema agria. A elegir: asada, pollo o pork belly. Acompañado de papas fritas."
+        description: "Rice, refried beans, cabbage, pico de gallo and sour cream. Choice of carne asada, chicken or pork belly. Served with French fries."
       },
       {
-        name: "Quesadilla de asada",
+        name: "Carne Asada Quesadilla",
         price: 17,
-        description: "Queso y carne, con pico de gallo y col aparte."
+        description: "Cheese and steak, with pico de gallo and cabbage on the side."
       },
       {
         name: "Bowl Compadres",
         price: 20,
-        description: "Arroz, frijoles, pico de gallo, crema agria y col. A elegir: asada, pollo tinga o birria."
+        description: "Rice, beans, pico de gallo, sour cream and cabbage. Choice of carne asada, chicken tinga or birria."
       }
     ]
   },
   {
     id: "sushi-rolls",
-    name: "Rollos de sushi",
+    name: "Sushi Rolls",
     items: [
       {
-        name: "Rollo Compadres",
+        name: "Compadres Roll",
         price: 17,
-        description: "Por dentro: alga, queso crema, imitación de cangrejo, camarón cocido y pepino. Por fuera: mezcla de imitación de cangrejo, aguacate, salsa de anguila, mayonesa picante, semillas de sésamo y cebollín."
+        description: "Inside: seaweed, cream cheese, imitation crab, cooked shrimp and cucumber. Outside: imitation crab mix, avocado, eel sauce, spicy mayo, sesame seeds and green onion."
       },
       {
-        name: "Rollo Crunch",
+        name: "Crunch Roll",
         price: 17,
-        description: "Por dentro: alga, queso crema, imitación de cangrejo, camarón cocido, pepino y aguacate. Por fuera: mezcla de imitación de cangrejo, migas de tempura, salsa de anguila, mayonesa picante, semillas de sésamo y cebollín."
+        description: "Inside: seaweed, cream cheese, imitation crab, cooked shrimp, cucumber and avocado. Outside: imitation crab mix, tempura crumbs, eel sauce, spicy mayo, sesame seeds and green onion."
       },
       {
-        name: "Rollo Jalapeño",
+        name: "Jalapeño Roll",
         price: 17,
-        description: "Por dentro: alga, queso crema, imitación de cangrejo, camarón cocido, pepino y aguacate. Por fuera: mezcla de imitación de cangrejo, rodajas de jalapeño, salsa de anguila, mayonesa picante, semillas de sésamo y cebollín."
+        description: "Inside: seaweed, cream cheese, imitation crab, cooked shrimp, cucumber and avocado. Outside: imitation crab mix, sliced jalapeño, eel sauce, spicy mayo, sesame seeds and green onion."
       },
       {
-        name: "Rollo Surf & Turf",
+        name: "Surf & Turf Roll",
         price: 20,
-        description: "Por dentro: alga, queso crema, imitación de cangrejo, carne asada, camarón cocido, pepino y aguacate. Por fuera: mezcla de imitación de cangrejo, salsa de anguila, mayonesa picante, semillas de sésamo y cebollín."
+        description: "Inside: seaweed, cream cheese, imitation crab, carne asada, cooked shrimp, cucumber and avocado. Outside: imitation crab mix, eel sauce, spicy mayo, sesame seeds and green onion."
       },
       {
-        name: "Rollo California",
+        name: "California Roll",
         price: 10,
-        description: "Por dentro: alga, queso crema, imitación de cangrejo, pepino y aguacate. Por fuera: salsa de anguila."
+        description: "Inside: seaweed, cream cheese, imitation crab, cucumber and avocado. Outside: eel sauce."
       },
       {
-        name: "Hazlo empanizado",
+        name: "Make It Deep-Fried",
         price: 2
       }
     ]
   },
   {
     id: "cantina-favorites",
-    name: "Favoritos de la cantina",
+    name: "Cantina Favorites",
     items: [
       {
-        name: "Plato de carne asada",
+        name: "Carne Asada Plate",
         price: 28,
-        description: "Corte estilo tampiqueña acompañado de arroz, frijoles refritos, pico de gallo, cebolla asada y tortilla de maíz."
+        description: "Tampiqueña-style steak served with rice, refried beans, pico de gallo, grilled onion and corn tortillas."
       },
       {
         name: "Tampiqueña",
         price: 34,
-        description: "Corte estilo tampiqueña acompañado de enchilada de queso, arroz, frijoles refritos, pico de gallo, cebolla asada y tortilla de maíz."
+        description: "Tampiqueña-style steak served with a cheese enchilada, rice, refried beans, pico de gallo, grilled onion and corn tortillas."
       },
       {
-        name: "Enchiladas de pollo",
+        name: "Chicken Enchiladas",
         price: 19,
-        description: "Tres enchiladas en salsa cremosa de tomatillo verde, acompañadas de arroz y frijoles."
+        description: "Three enchiladas in creamy green tomatillo sauce, served with rice and beans."
       },
       {
-        name: "Pulpo a la parrilla",
+        name: "Grilled Octopus",
         price: 28,
-        description: "Preparado con salsa rostizada y acompañado de puré de papa y ensalada."
+        description: "Prepared with roasted salsa and served with mashed potatoes and salad."
       },
       {
-        name: "Hamburguesa clásica",
+        name: "Classic Burger",
         price: 16,
-        description: "Carne, queso, aderezo, lechuga iceberg, tomate y cebolla, con papas fritas aparte. Agrega tocino por $3."
+        description: "Beef, cheese, dressing, iceberg lettuce, tomato and onion, with French fries on the side. Add bacon for $3."
       },
       {
-        name: "Mini burritos de birria",
+        name: "Mini Birria Burritos",
         price: 20,
-        description: "Tres burritos de birria de res acompañados de arroz y frijoles refritos."
+        description: "Three beef birria burritos served with rice and refried beans."
       },
       {
-        name: "Tacos de pollo a la parrilla",
+        name: "Grilled Chicken Tacos",
         price: 17,
-        description: "Tres tacos en tortilla de maíz con queso derretido, pico de gallo, alioli de cilantro y col."
+        description: "Three corn tortilla tacos with melted cheese, pico de gallo, cilantro aioli and cabbage."
       }
     ]
   },
   {
     id: "signatures",
-    name: "Especialidades",
+    name: "Specialties",
     items: [
       {
         name: "Ribeye",
         price: 48,
-        description: "Acompañado de ensalada y papa al horno."
+        description: "Served with salad and a baked potato."
       },
       {
-        name: "Ribeye con camarones",
+        name: "Ribeye & Shrimp",
         price: 58,
-        description: "Ribeye, camarones a la parrilla, ensalada y papa al horno."
+        description: "Ribeye, grilled shrimp, salad and a baked potato."
       },
       {
         name: "New York steak",
-        priceLabel: "Consultar",
-        description: "Acompañado de ensalada y papa al horno."
+        priceLabel: "Market Price",
+        description: "Served with salad and a baked potato."
       },
       {
         name: "Molcajete",
         price: 53,
-        description: "Camarones con cáscara a la parrilla, pollo a la parrilla, carne asada, chorizo, queso, pico de gallo, arroz, frijoles refritos y tortillas de maíz y harina."
+        description: "Grilled shell-on shrimp, grilled chicken, carne asada, chorizo, cheese, pico de gallo, rice, refried beans, and corn and flour tortillas."
       },
       {
         name: "Parrillada",
-        priceLabel: "Consultar",
-        description: "Camarones con cáscara a la parrilla, pollo a la parrilla, ribeye, carne asada, chorizo, queso, pico de gallo, arroz, frijoles refritos y tortilla."
+        priceLabel: "Market Price",
+        description: "Grilled shell-on shrimp, grilled chicken, ribeye, carne asada, chorizo, cheese, pico de gallo, rice, refried beans and tortillas."
       }
     ]
   },
   {
     id: "shrimp-your-way",
-    name: "Camarones a tu gusto",
+    name: "Shrimp Your Way",
     items: [
       {
-        name: "Camarones al ajo y mantequilla",
+        name: "Garlic Butter Shrimp",
         price: 24,
-        description: "Camarones con cáscara, acompañados de arroz y ensalada."
+        description: "Shell-on shrimp served with rice and salad."
       },
       {
-        name: "Camarones a la diabla",
+        name: "Shrimp a la Diabla",
         price: 24,
-        description: "Camarones con cáscara, acompañados de arroz y ensalada."
+        description: "Shell-on shrimp served with rice and salad."
       },
       {
-        name: "Camarones cucaracha",
+        name: "Cucaracha Shrimp",
         price: 24,
-        description: "Camarones con cáscara, acompañados de arroz y ensalada."
+        description: "Shell-on shrimp served with rice and salad."
       }
     ]
   },
   {
     id: "baja-seafood",
-    name: "Mariscos estilo Baja",
+    name: "Baja-Style Seafood",
     items: [
       {
         name: "Aguachile",
         price: 24,
-        description: "Camarón curado en limón, salsa verde, aguacate, pepino y cebolla. Acompañado de tostadas."
+        description: "Lime-cured shrimp, green salsa, avocado, cucumber and onion. Served with tostadas."
       },
       {
-        name: "Cóctel de camarón",
+        name: "Shrimp Cocktail",
         price: 22,
-        description: "Camarón cocido, pepino, cebolla, tomate, cilantro, Clamato y aguacate. Acompañado de tostadas."
+        description: "Cooked shrimp, cucumber, onion, tomato, cilantro, Clamato and avocado. Served with tostadas."
       },
       {
         name: "Campechana",
         price: 23,
-        description: "Camarón curado en limón, camarón cocido, pulpo, pepino, cebolla, tomate, cilantro, Clamato y aguacate. Acompañada de tostadas."
+        description: "Lime-cured shrimp, cooked shrimp, octopus, cucumber, onion, tomato, cilantro, Clamato and avocado. Served with tostadas."
       },
       {
-        name: "Bowl-plato de camarón con mango",
+        name: "Mango Shrimp Bowl",
         price: 23,
-        description: "Trozos de mango, camarón cocido, tomate, pepino, cebolla, cilantro y salsa de la casa. Acompañado de tostadas."
+        description: "Mango pieces, cooked shrimp, tomato, cucumber, onion, cilantro and house sauce. Served with tostadas."
       },
       {
-        name: "Bowl-plato de ceviche de camarón",
+        name: "Shrimp Ceviche Bowl",
         price: 22,
-        description: "Camarón curado en limón, pepino, tomate, cebolla, cilantro, Clamato y aguacate. Acompañado de tostadas."
+        description: "Lime-cured shrimp, cucumber, tomato, onion, cilantro, Clamato and avocado. Served with tostadas."
       },
       {
-        name: "Tostada de camarón",
+        name: "Shrimp Tostada",
         price: 10,
-        description: "Una tostada con camarón curado en limón, pepino, tomate, cebolla, cilantro, Clamato y aguacate."
+        description: "One tostada with lime-cured shrimp, cucumber, tomato, onion, cilantro, Clamato and avocado."
       },
       {
-        name: "Tostada de pescado",
+        name: "Fish Tostada",
         price: 10,
-        description: "Una tostada con pescado curado en limón, pepino, tomate, cebolla, cilantro, Clamato y aguacate."
+        description: "One tostada with lime-cured fish, cucumber, tomato, onion, cilantro, Clamato and avocado."
       },
       {
-        name: "Tostada mixta",
+        name: "Mixed Tostada",
         price: 25,
-        description: "Camarón cocido, camarón curado en limón, pulpo, jaiba deshebrada, salsa de la casa, Clamato, tomate, pepino, cebolla, cilantro y aguacate."
+        description: "Cooked shrimp, lime-cured shrimp, octopus, shredded crab, house sauce, Clamato, tomato, cucumber, onion, cilantro and avocado."
       },
       {
-        name: "Tostada azul",
+        name: "Blue Tostada",
         price: 23,
-        description: "Camarón curado en limón, camarón cocido, pulpo, cebolla, pepino, salsa de la casa y salsa extra picante de aceite de chile."
+        description: "Lime-cured shrimp, cooked shrimp, octopus, onion, cucumber, house sauce and extra-spicy chile oil sauce."
       },
       {
         name: "Mojarra",
         price: 23,
-        description: "Tilapia entera frita, tortilla de maíz, ensalada, arroz y frijoles."
+        description: "Whole fried tilapia, corn tortillas, salad, rice and beans."
       }
     ]
   },
   {
     id: "salads",
-    name: "Ensaladas",
+    name: "Salads",
     items: [
       {
-        name: "Ensalada de la casa",
+        name: "House Salad",
         price: 10,
-        description: "Mezcla de hojas verdes, tomate, cebolla, aderezo ranch y crutones. Agrega proteína por un costo adicional: carne asada, pollo a la parrilla o camarón."
+        description: "Mixed greens, tomato, onion, ranch dressing and croutons. Add protein for an additional charge: carne asada, grilled chicken or shrimp."
       }
     ]
   },
   {
     id: "kids",
-    name: "Niños",
+    name: "Kids",
     items: [
       {
-        name: "Quesadilla infantil de queso",
+        name: "Kid’s Cheese Quesadilla",
         price: 9,
-        description: "Acompañada de papas fritas. Agrega asada o pollo tinga por un costo adicional."
+        description: "Served with French fries. Add carne asada or chicken tinga for an additional charge."
       },
       {
-        name: "Burrito infantil de frijol y queso",
+        name: "Kid’s Bean & Cheese Burrito",
         price: 9,
-        description: "Acompañado de papas fritas."
+        description: "Served with French fries."
       }
     ]
   }
@@ -595,24 +595,24 @@ const foodMenu = [
 
 const menus = {
   food: {
-    name: "Comida",
+    name: "Food",
     groups: foodMenu,
     defaultCategory: "cantina-bites",
-    allLabel: "Toda la comida",
-    searchLabel: "Buscar en el menú de comida",
-    searchPlaceholder: "Prueba “tacos”, “birria” o “camarón”",
-    emptyTitle: "No encontramos platillos.",
-    emptyCopy: "Prueba con otro nombre, ingrediente o categoría."
+    allLabel: "All Food",
+    searchLabel: "Search the food menu",
+    searchPlaceholder: "Try “tacos,” “birria” or “shrimp”",
+    emptyTitle: "No dishes found.",
+    emptyCopy: "Try another name, ingredient or category."
   },
   drinks: {
-    name: "Bebidas",
+    name: "Drinks",
     groups: drinkMenu,
     defaultCategory: "cocktails",
-    allLabel: "Todas las bebidas",
-    searchLabel: "Buscar en el menú de bebidas",
-    searchPlaceholder: "Prueba “margarita” o “mezcal”",
-    emptyTitle: "No encontramos bebidas.",
-    emptyCopy: "Prueba con otro nombre, destilado o sabor."
+    allLabel: "All Drinks",
+    searchLabel: "Search the drink menu",
+    searchPlaceholder: "Try “margarita” or “mezcal”",
+    emptyTitle: "No drinks found.",
+    emptyCopy: "Try another name, spirit or flavor."
   }
 };
 
@@ -772,8 +772,8 @@ function render() {
   });
 
   const currentGroup = currentMenu.groups.find((group) => group.id === activeCategory);
-  menuContext.textContent = query ? `Resultados para “${menuSearch.value.trim()}”` : activeCategory === "all" ? currentMenu.allLabel : currentGroup.name;
-  menuCount.textContent = `${visibleCount} ${visibleCount === 1 ? "opción" : "opciones"}`;
+  menuContext.textContent = query ? `Results for “${menuSearch.value.trim()}”` : activeCategory === "all" ? currentMenu.allLabel : currentGroup.name;
+  menuCount.textContent = `${visibleCount} ${visibleCount === 1 ? "option" : "options"}`;
   menuEmpty.hidden = visibleCount !== 0;
 }
 
@@ -822,7 +822,7 @@ menuTypeButtons.forEach((button) => {
   const type = button.dataset.menuType;
   const total = totalItems(menus[type].groups);
   const count = button.querySelector("[data-menu-total]");
-  if (count) count.textContent = `${total} opciones`;
+  if (count) count.textContent = `${total} options`;
   button.addEventListener("click", () => selectMenuType(type));
 });
 
