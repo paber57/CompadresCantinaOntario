@@ -41,7 +41,7 @@ const drinkMenu = [
     id: "vodkaritas",
     name: "Vodkaritas",
     items: [
-      { name: "Cucumber", price: 12, description: "House vodka, Midori, cucumber purée, lime juice, Tajín and a sugar rim." },
+      { name: "Cucumber", price: 12, description: "House vodka, cucumber, lime juice, agave and a Tajín rim." },
       { name: "Mango", price: 12, description: "House vodka, lime juice, agave syrup, mango purée and a Tajín rim." },
       { name: "Açaí", price: 12, description: "House vodka, açaí purée, lime juice, agave syrup and a sugar rim." }
     ]
@@ -63,7 +63,7 @@ const drinkMenu = [
       { name: "Mango", price: 14 },
       { name: "Tamarind", price: 14 },
       { name: "La Mentirosa", price: 9, description: "Michelada mix and sparkling water." },
-      { name: "Michelada Flight", price: 35 }
+      { name: "Michelada Flight", price: 24 }
     ]
   },
   {
@@ -71,17 +71,17 @@ const drinkMenu = [
     name: "Cocktails",
     items: [
       { name: "The Fire Smoky", price: 18, description: "El Silencio mezcal, watermelon syrup and rhubarb bitters." },
-      { name: "House Old Fashioned", price: 20, description: "Bourbon, Luxardo liqueur, aromatic bitters, orange peel and black cherry." },
-      { name: "Oaxaca Old Fashioned", price: 18, description: "El Silencio mezcal and aromatic bitters." },
-      { name: "Whiskey Smash", price: 16, description: "Maker's Mark, simple syrup, lime juice and muddled mint." },
-      { name: "El Guayabito", price: 16, description: "Herradura Reposado, agave syrup, lime juice and guava purée." },
-      { name: "House Sangria", price: 12, description: "Red wine, sparkling water, lime juice and orange juice." },
-      { name: "The Poolside", price: 14, description: "Malibu rum, peach schnapps, melon liqueur and coconut cream." },
-      { name: "Piña Colada", price: 14, description: "Malibu rum, pineapple juice, coconut syrup, whipped cream and a cherry." },
+      { name: "House Old Fashioned", price: 20, description: "Benchmark, aromatic bitters, agave and orange peel." },
+      { name: "Oaxaca Old Fashioned", price: 18, description: "El Silencio mezcal, aromatic bitters and agave, topped with orange peel and black cherry." },
+      { name: "Whiskey Smash", price: 16, description: "Muddled mint, Benchmark, lime juice and agave." },
+      { name: "El Guayabito", price: 16, description: "Tajín and salt rim, house tequila, peach blossom, pineapple, guava, watermelon and chamoy." },
+      { name: "House Sangria", price: 12, description: "Lime juice, orange juice and red wine." },
+      { name: "The Poolside", price: 14, description: "Parrot Bay, peach schnapps, pineapple juice, coconut cream and melon liqueur." },
+      { name: "Piña Colada", price: 14, description: "Coconut liqueur, peach schnapps, pineapple juice and piña colada mix syrup." },
       { name: "Pink Panther", price: 18, description: "Tequila, mezcal, watermelon and aromatic bitters." },
-      { name: "Paloma", price: 14, description: "House tequila, lime juice, grapefruit juice and agave syrup." },
-      { name: "Spicy Tequila Cantarito", price: 16, description: "Herradura tequila, orange juice, grapefruit juice, Squirt and sliced serrano pepper." },
-      { name: "Tropicoqueta", price: 16, description: "Malibu, cranberry, pineapple, peach schnapps and half-and-half." },
+      { name: "Paloma", price: 14, description: "Tajín rim, house tequila, lime juice and salt, topped with Squirt." },
+      { name: "Spicy Tequila Cantarito", price: 16, description: "Tajín rim, house tequila, orange juice, muddled jalapeño, lime juice, chamoy, Squirt, salt and Tajín." },
+      { name: "Tropicoqueta", price: 16, description: "Coconut liqueur, cranberry, pineapple juice, peach schnapps and half-and-half cream." },
       { name: "Tableside Old Fashioned", price: 24 }
     ]
   },
@@ -100,6 +100,7 @@ const drinkMenu = [
       { name: "Clase Azul", price: 25, subgroup: "Silver" },
       { name: "Maestro Dobel", price: 16, subgroup: "Silver" },
       { name: "Mandala", price: 18, subgroup: "Silver" },
+      { name: "Tequila Lalo", price: 14, subgroup: "Silver" },
       { name: "Don Julio", price: 20, subgroup: "Añejo" },
       { name: "Don Julio 70 Cristalino", price: 26, subgroup: "Añejo" },
       { name: "Don Julio 1942", price: 40, subgroup: "Añejo" },
@@ -166,7 +167,7 @@ const drinkMenu = [
     id: "beer",
     name: "Beer",
     items: [
-      { name: "Rotating Draft Beer", price: 8, subgroup: "Draft" },
+      { name: "Rotating Draft Beer", price: 7, subgroup: "Draft" },
       { name: "Large Draft Beer", price: 14, subgroup: "Draft" },
       { name: "Modelo Especial", price: 7, subgroup: "Bottled" },
       { name: "Negra Modelo", price: 7, subgroup: "Bottled" },
@@ -216,6 +217,23 @@ const drinkMenu = [
       { name: "Rémy Martin", price: 12, subgroup: "Brandy & Cognac" },
       { name: "Hennessy", price: 16, subgroup: "Brandy & Cognac" }
     ]
+  },
+  {
+    id: "happy-hour-drinks",
+    name: "Happy Hour Drinks",
+    note: "Monday–Thursday · 3 PM–7 PM & 9 PM–close",
+    items: [
+      { name: "Draft Beer – 16 oz", price: 5 },
+      { name: "House Draft Michelada", price: 9, description: "Clamato mix and beer." },
+      { name: "Margaritas", price: 9, description: "Lime, mango, cucumber, guava, tamarindo, strawberry or watermelon." },
+      { name: "Paloma", price: 10, description: "House tequila, lime juice, agave and Squirt." },
+      { name: "House Sangria", price: 8, description: "Red wine, lime juice and orange juice." },
+      { name: "Whiskey Smash", price: 12, description: "House whiskey, mint, lime juice and agave." },
+      { name: "Well Drinks", price: 8, description: "House tequila, vodka, rum or whiskey with pineapple, cranberry or soda." },
+      { name: "Bandera Flight", price: 7, description: "Tequila shot, lime juice and Clamato mix." },
+      { name: "Shooters", price: 25, description: "Flight of 5 shots. Choice of Mexican candy or mango." },
+      { name: "Beer Bucket", price: 25, description: "Choice of Michelob Ultra, Estrella Jalisco or Bud Light." }
+    ]
   }
 ];
 
@@ -227,7 +245,7 @@ const foodMenu = [
     items: [
       {
         name: "Guacamole & Chips",
-        price: 13,
+        price: 14,
         description: "Fresh guacamole topped with pico de gallo and cheese, served with red salsa and tortilla chips."
       },
       {
@@ -237,13 +255,18 @@ const foodMenu = [
       },
       {
         name: "Bone Marrow Tacos",
-        price: 24,
-        description: "Roasted bone marrow, carne asada, melted cheese, spicy mayo, cilantro aioli, chimichurri and pickled onion; served with flour tortillas."
+        price: 23,
+        description: "Roasted marrow bone topped with carne asada, melted cheese, spicy mayo, cilantro aioli, chimichurri and pickled onion; served with flour tortillas on the side."
       },
       {
         name: "Compadres Fries",
         price: 18,
         description: "French fries with melted cheese, spicy mayo, cilantro aioli, pickled onion and a fried egg. Choice of carne asada, birria or chicken."
+      },
+      {
+        name: "House Fries",
+        price: 9,
+        description: "French fries with seasoning."
       },
       {
         name: "Nacho Libre",
@@ -252,7 +275,7 @@ const foodMenu = [
       },
       {
         name: "Chicken Wings",
-        price: 18,
+        price: 17,
         description: "Choice of Buffalo, mango habanero or BBQ. Served with French fries."
       },
       {
@@ -268,7 +291,7 @@ const foodMenu = [
       {
         name: "Pork Belly Bites",
         price: 20,
-        description: "Crispy pork belly, sriracha honey, spicy mayo and corn tortillas."
+        description: "Crispy pork belly, sriracha honey, spicy mayo, pickled onion, pico de gallo and corn tortillas."
       },
       {
         name: "Ahi Poke Nachos",
@@ -279,11 +302,6 @@ const foodMenu = [
         name: "Compa Bites",
         price: 25,
         description: "Chicken taquitos, Compadres Fries and Buffalo wings."
-      },
-      {
-        name: "Taco Sampler",
-        price: 24,
-        description: "Surf & turf taco, pork belly taco, crispy shrimp taco and battered fish taco."
       }
     ]
   },
@@ -312,7 +330,7 @@ const foodMenu = [
         description: "Flour tortilla, sweet-and-spicy battered rock shrimp, cabbage, spicy mayo, sriracha honey, sesame seeds and green onion."
       },
       {
-        name: "Fish Taco",
+        name: "Battered Fish Taco",
         price: 6,
         description: "Corn tortilla, beer-battered fish, cabbage, pico de gallo and cilantro aioli."
       },
@@ -323,8 +341,13 @@ const foodMenu = [
       },
       {
         name: "Gobernador Tacos",
-        price: 25,
-        description: "Three grilled shrimp tacos with cabbage, pico de gallo, sour cream and melted cheese."
+        price: 22,
+        description: "Three tacos with melted cheese, grilled shrimp, cabbage, pico de gallo and sour cream."
+      },
+      {
+        name: "Taco Flight",
+        price: 24,
+        description: "Surf & turf taco, pork belly taco, crispy shrimp taco and battered fish taco."
       }
     ]
   },
@@ -334,7 +357,7 @@ const foodMenu = [
     items: [
       {
         name: "Arrachera Surf & Turf",
-        price: 9,
+        price: 10,
         description: "Arrachera-style steak, spicy grilled shrimp, cabbage, pico de gallo and cilantro aioli."
       },
       {
@@ -356,26 +379,26 @@ const foodMenu = [
       {
         name: "Burrito Surf & Turf",
         price: 21,
-        description: "Arrachera, spicy grilled shrimp, bacon, melted cheese, pico de gallo, cabbage, spicy mayo and cilantro aioli. Served with French fries."
+        description: "Arrachera meat, spicy grilled shrimp, bacon bites, melted cheese, pico de gallo, cabbage, spicy mayo and cilantro aioli. Served with French fries. Make it wet for $2."
       },
       {
         name: "Burrito California",
         price: 17,
-        description: "Carne asada, French fries inside, pico de gallo and cheese."
+        description: "Carne asada, French fries inside, pico de gallo and melted cheese. Make it wet for $2."
       },
       {
         name: "House Burrito",
         price: 17,
-        description: "Rice, refried beans, cabbage, pico de gallo and sour cream. Choice of carne asada, chicken or pork belly. Served with French fries."
+        description: "Rice, refried beans, cabbage, pico de gallo and sour cream. Choice of carne asada, chicken or pork belly. Served with French fries. Make it wet for $2."
       },
       {
         name: "Carne Asada Quesadilla",
         price: 17,
-        description: "Cheese and steak, with pico de gallo and cabbage on the side."
+        description: "Cheese and meat. Pico de gallo, cabbage and sour cream on the side."
       },
       {
         name: "Bowl Compadres",
-        price: 20,
+        price: 17,
         description: "Rice, beans, pico de gallo, sour cream and cabbage. Choice of carne asada, chicken tinga or birria."
       }
     ]
@@ -422,22 +445,27 @@ const foodMenu = [
       {
         name: "Carne Asada Plate",
         price: 28,
-        description: "Tampiqueña-style steak served with rice, refried beans, pico de gallo, grilled onion and corn tortillas."
+        description: "Tampiqueña-style steak served with rice, refried beans, pico de gallo, grilled onion, cabbage and corn tortillas."
       },
       {
         name: "Tampiqueña",
         price: 34,
-        description: "Tampiqueña-style steak served with a cheese enchilada, rice, refried beans, pico de gallo, grilled onion and corn tortillas."
+        description: "Tampiqueña-style steak served with a cheese enchilada, rice, refried beans, pico de gallo, grilled onion, cabbage and corn tortillas."
       },
       {
         name: "Chicken Enchiladas",
         price: 19,
-        description: "Three enchiladas in creamy green tomatillo sauce, served with rice and beans."
+        description: "Three enchiladas served with pickled onion, spicy mayo, sour cream and cheese on top. Rice and beans on the side."
       },
       {
         name: "Grilled Octopus",
         price: 28,
-        description: "Prepared with roasted salsa and served with mashed potatoes and salad."
+        description: "Made with roasted salsa and served with mashed potatoes, potato wedges and salad. Topped with spicy mayo and pickled onion."
+      },
+      {
+        name: "Grilled Chicken",
+        price: 23,
+        description: "Served with rice, refried beans, pico de gallo, cabbage and corn tortillas."
       },
       {
         name: "Classic Burger",
@@ -452,7 +480,7 @@ const foodMenu = [
       {
         name: "Grilled Chicken Tacos",
         price: 17,
-        description: "Three corn tortilla tacos with melted cheese, pico de gallo, cilantro aioli and cabbage."
+        description: "Three corn tortilla tacos with melted cheese, pico de gallo, cilantro aioli, spicy mayo and cabbage."
       }
     ]
   },
@@ -463,27 +491,27 @@ const foodMenu = [
       {
         name: "Ribeye",
         price: 48,
-        description: "Served with salad and a baked potato."
+        description: "12 oz ribeye served with salad and a baked potato."
       },
       {
         name: "Ribeye & Shrimp",
         price: 58,
-        description: "Ribeye, grilled shrimp, salad and a baked potato."
+        description: "12 oz ribeye and grilled shrimp served with salad and a baked potato."
       },
       {
         name: "New York steak",
-        priceLabel: "Market Price",
-        description: "Served with salad and a baked potato."
+        price: 39,
+        description: "10 oz New York steak served with salad and a baked potato."
       },
       {
         name: "Molcajete",
         price: 53,
-        description: "Grilled shell-on shrimp, grilled chicken, carne asada, chorizo, cheese, pico de gallo, rice, refried beans, and corn and flour tortillas."
+        description: "Grilled shell-on shrimp, grilled chicken, carne asada, chorizo and cheese. Served with pico de gallo, pickled onion, rice, refried beans, and corn and flour tortillas. Recommended for sharing by 2 people."
       },
       {
         name: "Parrillada",
-        priceLabel: "Market Price",
-        description: "Grilled shell-on shrimp, grilled chicken, ribeye, carne asada, chorizo, cheese, pico de gallo, rice, refried beans and tortillas."
+        price: 120,
+        description: "Grilled shell-on shrimp, grilled chicken, ribeye, carne asada, chorizo and cheese. Served with pico de gallo, rice, refried beans, and corn and flour tortillas. Recommended for sharing by 3–4 people."
       }
     ]
   },
@@ -515,27 +543,27 @@ const foodMenu = [
       {
         name: "Aguachile",
         price: 24,
-        description: "Lime-cured shrimp, green salsa, avocado, cucumber and onion. Served with tostadas."
+        description: "Lime-cured shrimp, green sauce, avocado, cucumber and onion. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Shrimp Cocktail",
         price: 22,
-        description: "Cooked shrimp, cucumber, onion, tomato, cilantro, Clamato and avocado. Served with tostadas."
+        description: "Cooked shrimp, cucumber, onion, tomato, cilantro, Clamato and avocado. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Campechana",
         price: 23,
-        description: "Lime-cured shrimp, cooked shrimp, octopus, cucumber, onion, tomato, cilantro, Clamato and avocado. Served with tostadas."
+        description: "Lime-cured shrimp, cooked shrimp, octopus, cucumber, onion, tomato, cilantro, Clamato and avocado. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Mango Shrimp Bowl",
         price: 23,
-        description: "Mango pieces, cooked shrimp, tomato, cucumber, onion, cilantro and house sauce. Served with tostadas."
+        description: "Mango chunks, cooked shrimp, tomato, cucumber, onion, cilantro and house sauce. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Shrimp Ceviche Bowl",
         price: 22,
-        description: "Lime-cured shrimp, cucumber, tomato, onion, cilantro, Clamato and avocado. Served with tostadas."
+        description: "Lime-cured shrimp, cucumber, tomato, onion, cilantro, Clamato and avocado. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Shrimp Tostada",
@@ -550,12 +578,12 @@ const foodMenu = [
       {
         name: "Mixed Tostada",
         price: 25,
-        description: "Cooked shrimp, lime-cured shrimp, octopus, shredded crab, house sauce, Clamato, tomato, cucumber, onion, cilantro and avocado."
+        description: "Cooked shrimp, lime-cured shrimp, octopus, shredded jaiba, house sauce, Clamato, tomato, cucumber, onion, cilantro and avocado. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Blue Tostada",
         price: 23,
-        description: "Lime-cured shrimp, cooked shrimp, octopus, onion, cucumber, house sauce and extra-spicy chile oil sauce."
+        description: "Lime-cured shrimp, cooked shrimp, octopus, onion, cucumber, house sauce, habanero aioli and extra-spicy chile oil sauce. Served with tostadas and crackers/saladitas on the side."
       },
       {
         name: "Mojarra",
@@ -571,7 +599,7 @@ const foodMenu = [
       {
         name: "House Salad",
         price: 10,
-        description: "Mixed greens, tomato, onion, ranch dressing and croutons. Add protein for an additional charge: carne asada, grilled chicken or shrimp."
+        description: "Spring mix, tomato, onion, ranch and croutons. Add protein for an additional charge: carne asada, grilled shrimp or grilled chicken."
       }
     ]
   },
@@ -587,8 +615,24 @@ const foodMenu = [
       {
         name: "Kid’s Bean & Cheese Burrito",
         price: 9,
-        description: "Served with French fries."
+        description: "Two mini burritos served with French fries."
       }
+    ]
+  },
+  {
+    id: "happy-hour-food",
+    name: "Happy Hour Food",
+    note: "Monday–Thursday · 3 PM–7 PM & 9 PM–close",
+    items: [
+      { name: "Nacho Libre", price: 13, description: "Corn tortilla chips, nacho cheese, creamy tomatillo sauce, refried beans, sour cream, pico de gallo and jalapeño. Choice of carne asada or birria." },
+      { name: "Compadres Fries", price: 12, description: "French fries, melted cheese, spicy mayo, cilantro aioli and pickled onion. Choice of carne asada or birria." },
+      { name: "Chicken Wings", price: 12, description: "Choice of Buffalo, BBQ or mango habanero. Served with celery and carrots." },
+      { name: "Chicken Taquitos", price: 10, description: "Fried corn chicken taquitos with spicy mayo, sour cream, cilantro aioli and cheese." },
+      { name: "Pork Belly Bites", price: 12, description: "Crispy pork belly, honey sriracha, spicy mayo, pickled onion, pico de gallo and corn tortillas." },
+      { name: "Meat Quesadilla", price: 11, description: "Cheese and meat." },
+      { name: "Shrimp Ceviche Tostada", price: 10, description: "A single tostada with lime-cured shrimp, cucumber, tomato, onion, cilantro and Clamato." },
+      { name: "Taco Flight", price: 15, description: "Four street tacos with onion and cilantro: carne asada, pork belly, chicken tinga and battered fish." },
+      { name: "Street Tacos", price: 6, description: "Two street tacos with onion and cilantro. Choice of carne asada, pork belly or chicken tinga." }
     ]
   }
 ];
