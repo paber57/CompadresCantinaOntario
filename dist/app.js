@@ -234,6 +234,38 @@ const drinkMenu = [
       { name: "Shooters", price: 25, description: "Flight of 5 shots. Choice of Mexican candy or mango." },
       { name: "Beer Bucket", price: 25, description: "Choice of Michelob Ultra, Estrella Jalisco or Bud Light." }
     ]
+  },
+  {
+    id: "non-alcoholic",
+    name: "Non-Alcoholic Beverages",
+    items: [
+      { name: "Jamaica / Hibiscus", price: 8 },
+      { name: "Horchata", price: 8 },
+      { name: "Jasmine Tea", price: 7 },
+      { name: "Lemonade", price: 6 },
+      { name: "Cucumber Lemonade", price: 8 },
+      { name: "Strawberry Lemonade", price: 8 },
+      { name: "Pink Lemonade", price: 5 },
+      { name: "Soda Fountain", price: 5 },
+      { name: "Coke Zero Can", price: 5 },
+      { name: "Mexican Coke", price: 6 },
+      { name: "Topo Chico", price: 5 }
+    ]
+  },
+  {
+    id: "brunch-drinks",
+    name: "Brunch Drinks",
+    note: "Friday–Sunday · 9 AM–2 PM",
+    items: [
+      { name: "Mimosa Glass", price: 7 },
+      { name: "Mimosa Flight", price: 20, description: "Original, orange and cranberry." },
+      { name: "Bottomless Mimosa", price: 25, description: "Unlimited for 2 hours." },
+      { name: "Bloody Mary", price: 12 },
+      { name: "House Sangria", price: 12 },
+      { name: "Piña Colada", price: 14, description: "Blended or on the rocks." },
+      { name: "Orange Juice", price: 4 },
+      { name: "Coffee", price: 3.49 }
+    ]
   }
 ];
 
@@ -633,6 +665,40 @@ const foodMenu = [
       { name: "Shrimp Ceviche Tostada", price: 10, description: "A single tostada with lime-cured shrimp, cucumber, tomato, onion, cilantro and Clamato." },
       { name: "Taco Flight", price: 15, description: "Four street tacos with onion and cilantro: carne asada, pork belly, chicken tinga and battered fish." },
       { name: "Street Tacos", price: 6, description: "Two street tacos with onion and cilantro. Choice of carne asada, pork belly or chicken tinga." }
+    ]
+  },
+  {
+    id: "desserts",
+    name: "Desserts",
+    items: [
+      { name: "Fried Ice Cream", price: 12 },
+      { name: "Butter Cake", price: 12 },
+      { name: "Buñuelos & Ice Cream", price: 12 },
+      { name: "Flan", price: 10 },
+      { name: "Churros & Ice Cream", price: 10 }
+    ]
+  },
+  {
+    id: "brunch",
+    name: "Brunch",
+    note: "Friday–Sunday · 9 AM–2 PM",
+    items: [
+      { name: "Molcajete Breakfast", price: 50, description: "Recommended for sharing between 2 people. Carne asada, grilled chicken, chorizo, eggs, red or green chilaquiles, bacon, pico de gallo, avocado, Monterey Jack cheese and sour cream. Served with beans and breakfast potato." },
+      { name: "Ribeye Chilaquiles", price: 48, description: "Recommended for sharing between 2 people. Choice of red chilaquiles, green chilaquiles or both. Served with eggs, potatoes, beans, chimichurri sauce, cheese, onion, cilantro and sour cream." },
+      { name: "Chilaquiles", price: 19, description: "Choice of green or red sauce. Served with eggs, beans and potato. Topped with sour cream, cheese, onion and cilantro." },
+      { name: "Chilaquiles Asada, Chicken or Birria", price: 25, description: "Choice of green or red sauce. Served with eggs, beans and potato. Topped with sour cream, cheese, onion and cilantro." },
+      { name: "Breakfast Chicken Enchiladas", price: 20, description: "Choice of green or red sauce. Served with eggs on top and rice and beans on the side." },
+      { name: "Steak and Eggs", price: 17, description: "Steak, eggs, bacon and potato." },
+      { name: "Huevos Rancheros", price: 16, description: "Served on a fried tortilla with beans, chorizo, eggs, pico de gallo, cheese, sour cream, cilantro, avocado and sauce on top. Choice of green or red sauce." },
+      { name: "Omelette", price: 16, description: "Whole egg stuffed with mushroom, spinach and Jack cheese. Served with beans and potato. Topped with cilantro, avocado and sauce. Choice of green or red sauce." },
+      { name: "Chorizo Burrito", price: 15, description: "Scrambled eggs with chorizo, Monterey Jack cheese and potatoes. French fries on the side." },
+      { name: "Breakfast Burrito", price: 18, description: "Eggs, beans, bacon, pork belly, Monterey Jack cheese and pico de gallo. Potatoes on the side." },
+      { name: "Ribeye Sandwich", price: 48, description: "Sourdough bread, cilantro aioli, Monterey Jack cheese, cheddar cheese, tomato and lettuce. Served with French fries." },
+      { name: "Birria Plate", price: 20, description: "Beef birria with broth, served with corn tortillas, onion and cilantro." },
+      { name: "Breakfast Quesabirria", price: 18, description: "Birria quesadilla served with consommé, onion and cilantro." },
+      { name: "Avocado Toast", price: 15, description: "Accompanied with avocado, eggs, pico de gallo, fresh cheese and cilantro." },
+      { name: "French Toast", price: 14, description: "Topped with whole strawberry. Choice of Nutella, lechera or strawberry purée." },
+      { name: "Pancakes", price: 15, description: "Choice of Nutella, lechera or strawberry purée. Topped with whipped cream." }
     ]
   }
 ];
