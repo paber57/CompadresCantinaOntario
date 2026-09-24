@@ -1054,17 +1054,19 @@ input {
 
 .favorites,
 .menu,
-.events {
+.events-preview {
   position: relative;
 }
 
-.events-heading {
-  max-width: 52rem;
+.events-preview-heading {
   margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.events-heading h2 {
-  max-width: 13ch;
+.events-preview-heading h2 {
   margin: 0;
   color: #fff;
   font-family: var(--display);
@@ -1073,26 +1075,47 @@ input {
   line-height: 0.96;
 }
 
-.event-feature {
+.events-preview-all {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--red-bright);
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.events-preview-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(22rem, 0.95fr);
+  grid-template-columns: minmax(18rem, 0.82fr) minmax(22rem, 1.18fr);
   overflow: hidden;
   border: 1px solid var(--line);
-  background: rgba(8, 8, 8, 0.94);
+  border-top-color: rgba(225, 37, 27, 0.65);
+  background:
+    linear-gradient(135deg, rgba(225, 37, 27, 0.07), transparent 42%),
+    rgba(8, 8, 8, 0.95);
+  box-shadow: 0 1.8rem 5rem rgba(0, 0, 0, 0.3);
 }
 
-.event-photo {
-  min-height: 34rem;
+.events-preview-image {
+  height: clamp(27rem, 46vw, 38rem);
   overflow: hidden;
+  background: #111;
 }
 
-.event-photo img {
+.events-preview-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 43%;
+  transition: transform 500ms ease;
 }
 
-.event-copy {
+.events-preview-image:hover img {
+  transform: scale(1.025);
+}
+
+.events-preview-copy {
   padding: clamp(2rem, 5vw, 4.5rem);
   display: flex;
   flex-direction: column;
@@ -1100,7 +1123,7 @@ input {
   border-left: 1px solid var(--line-red);
 }
 
-.event-label {
+.events-preview-label {
   margin: 0 0 1rem;
   color: var(--red-bright);
   font-size: 0.75rem;
@@ -1109,7 +1132,7 @@ input {
   text-transform: uppercase;
 }
 
-.event-copy h3 {
+.events-preview-copy h3 {
   margin: 0;
   color: #fff;
   font-family: var(--display);
@@ -1119,55 +1142,24 @@ input {
   text-transform: uppercase;
 }
 
-.event-copy > p:not(.event-label) {
+.events-preview-copy > p:not(.events-preview-label) {
   max-width: 38rem;
-  margin: 1.35rem 0;
+  margin: 1rem 0 0;
   color: var(--muted);
   line-height: 1.75;
 }
 
-.event-details {
-  margin: 0 0 2rem;
-}
-
-.event-details div {
-  padding: 0.75rem 0;
-  display: grid;
-  grid-template-columns: 5rem 1fr;
-  gap: 1rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.event-details dt {
+.events-preview-copy .events-preview-date {
   color: var(--red-bright);
-  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
-.event-details dd {
-  margin: 0;
-  color: #fff;
-  font-weight: 700;
-}
-
-.event-actions {
+.events-preview-actions {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem 1.5rem;
-}
-
-.event-call {
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: var(--red-bright);
-  text-underline-offset: 0.35rem;
+  gap: 1rem;
 }
 
 .reviews {
@@ -3317,37 +3309,46 @@ input {
 }
 
 @media (max-width: 920px) {
-  .event-feature {
+  .events-preview-card {
     grid-template-columns: 1fr;
   }
 
-  .event-photo {
-    min-height: 28rem;
+  .events-preview-image {
+    height: clamp(25rem, 78vw, 36rem);
   }
 
-  .event-copy {
+  .events-preview-copy {
     border-top: 1px solid var(--line-red);
     border-left: 0;
   }
 }
 
 @media (max-width: 520px) {
-  .events {
+  .events-preview {
     width: calc(100% - 1rem);
     padding-inline: 1rem;
   }
 
-  .event-photo {
-    min-height: 22rem;
+  .events-preview-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 
-  .event-copy {
+  .events-preview-image {
+    height: 24rem;
+  }
+
+  .events-preview-copy {
     padding: 1.5rem;
   }
 
-  .event-details div {
-    grid-template-columns: 1fr;
-    gap: 0.3rem;
+  .events-preview-copy h3 {
+    font-size: clamp(2.1rem, 11vw, 3rem);
+  }
+
+  .events-preview-actions .button {
+    width: 100%;
   }
 }
 
